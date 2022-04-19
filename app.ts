@@ -1,8 +1,7 @@
-import ax = require('axios');
-const axios = ax.default;
+import axios, { AxiosRequestConfig } from 'axios';
 const iterationsAmount: number = 20;
 const iterationDelayMs: number = 150;
-const reqConf: ax.AxiosRequestConfig = {
+const reqConf: AxiosRequestConfig = {
     method: 'GET',
     url: 'https://www.google.com/',
     responseType: 'json',
